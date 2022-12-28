@@ -8,7 +8,7 @@
 - name: GTEST | get from git repository
   git: repo="{{ gtest_repo_url }}"
        dest="{{ gtest_tmp }}"
-       version="{{ gtets_version }}"
+       version="{{ gtest_version }}"
   when: not gtest_exists.stat.exists
   register: gtest_downloaded
 
